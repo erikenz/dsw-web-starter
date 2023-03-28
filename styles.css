@@ -1,0 +1,119 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.container {
+	display: flex;
+	/* height: 100vh; */
+	height: 100%;
+	flex-direction: column;
+}
+
+.container-left {
+	background-color: white;
+	padding: 1rem;
+}
+.menu {
+	display: flex;
+	flex-direction: row;
+}
+.menu-item {
+	display: block;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	background-color: aqua;
+	border: 1px solid;
+	text-align: center;
+	text-decoration: none;
+}
+
+.container-right {
+	background-color: antiquewhite;
+	padding: 1rem;
+}
+
+@media (min-width: 768px) {
+	.container {
+		flex-direction: row;
+	}
+	.container-right {
+		width: 100%;
+		border-left-style: solid;
+		border-left-color: black;
+		border-left-width: 2px;
+	}
+	.contaner-left {
+		width: 20%;
+	}
+	.menu {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.homero-img {
+	width: 80%;
+	height: 90%;
+}
+
+/* Bio */
+.img-bio {
+	display: block;
+	margin: 0 auto;
+}
+
+.text-bio {
+	text-align: justify;
+	font-style: italic;
+	line-height: 2;
+}
+
+/* Contacto */
+h2 {
+	margin-top: 0;
+}
+
+.form-control {
+	display: block;
+	margin: 0.5rem 0;
+}
+
+.form-button {
+	display: block;
+}
+
+.form-msg {
+	display: none;
+}
+.show-error {
+	display: block;
+	color: red;
+}
+.show-success {
+	display: block;
+	color: green;
+}
+
+/* User */
+.user-img {
+	display: block;
+	margin: 0 auto;
+}
+
+#get-user {
+	display: block;
+	margin: 0 auto;
+}
+
+.user {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.text-bio {
+	text-align: center;
+	line-height: 1;
+}
